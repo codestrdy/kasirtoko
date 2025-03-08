@@ -1,0 +1,5 @@
+package app.strdy.kasirtoko
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity : FlutterActivity()
