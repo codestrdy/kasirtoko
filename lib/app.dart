@@ -11,15 +11,7 @@ class App extends StatelessWidget {
     return MaterialApp.router(
       title: F.title,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        pageTransitionsTheme: PageTransitionsTheme(
-          builders: Map<TargetPlatform, PageTransitionsBuilder>.fromIterable(
-            TargetPlatform.values,
-            value: (_) => const FadeForwardsPageTransitionsBuilder(),
-          ),
-        ),
-      ),
+      theme: COSThemes.lightTheme,
       builder: (context, child) {
         ErrorWidget.builder = (errorDetails) {
           return Container(
