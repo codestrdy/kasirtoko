@@ -53,6 +53,7 @@ flavorizr:
     admin:
       app:
         name: "Kasko Admin"
+        icon: "assets/admin-icon.png"
 
       android:
         applicationId: "app.strdy.kaskoadmin"
@@ -61,6 +62,7 @@ flavorizr:
     user:
       app:
         name: "Kasko"
+        icon: "assets/user-icon.png"
 
       android:
         applicationId: "app.strdy.kasko"
