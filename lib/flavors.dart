@@ -1,7 +1,4 @@
-enum Flavor {
-  admin,
-  user,
-}
+enum Flavor { admin, user }
 
 class F {
   static Flavor? appFlavor;
@@ -18,5 +15,4 @@ class F {
         return 'title';
     }
   }
-
 }

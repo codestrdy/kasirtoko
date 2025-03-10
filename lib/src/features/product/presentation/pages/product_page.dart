@@ -2,6 +2,7 @@ import 'package:drops/drops.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kasirtoko/flavors.dart';
+import 'package:kasirtoko/src/core/core.dart';
 
 class ProductPage extends StatelessWidget {
   const ProductPage({super.key});
@@ -9,6 +10,18 @@ class ProductPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Row(
+          spacing: 8,
+          children: [
+            Image.asset('assets/user-logo.png', height: 40),
+            Text(
+              'Selamat Datang di Kasko',
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: COSColors.primary),
+            ),
+          ],
+        ),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

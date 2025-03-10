@@ -6,14 +6,14 @@ part 'color.dart';
 class COSThemes {
   static final lightTheme = ThemeData(
     colorScheme: ColorScheme.light(
-      surface: COSColors.neutral.shade200,
+      surface: COSColors.neutral.shade100,
       primary: COSColors.primary,
       secondary: COSColors.secondary,
       error: COSColors.error,
     ),
     textTheme: GoogleFonts.poppinsTextTheme(),
     cardColor: COSColors.neutral.shade50,
-    scaffoldBackgroundColor: COSColors.neutral.shade200,
+    scaffoldBackgroundColor: COSColors.neutral.shade100,
     pageTransitionsTheme: PageTransitionsTheme(
       builders: Map<TargetPlatform, PageTransitionsBuilder>.fromIterable(
         TargetPlatform.values,
