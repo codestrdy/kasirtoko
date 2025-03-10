@@ -1,4 +1,7 @@
-enum Flavor { admin, user }
+enum Flavor {
+  admin,
+  user,
+}
 
 class F {
   static Flavor? appFlavor;
@@ -12,7 +15,8 @@ class F {
       case Flavor.user:
         return 'Kasko';
       default:
-        return 'Kasir Toko';
+        return 'title';
     }
   }
+
 }

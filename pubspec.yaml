@@ -51,13 +51,13 @@ flavorizr:
 
       android:
         applicationId: "app.strdy.kaskoadmin"
-      # ios:
-      #   bundleId: "app.strdy.kaskoadmin"
+      ios:
+        bundleId: "app.strdy.kaskoadmin"
     user:
       app:
         name: "Kasko"
 
       android:
         applicationId: "app.strdy.kasko"
-      # ios:
-      #   bundleId: "app.strdy.kasko"
+      ios:
+        bundleId: "app.strdy.kasko"

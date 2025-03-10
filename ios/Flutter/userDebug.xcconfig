@@ -1,0 +1,7 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"
+#include "Generated.xcconfig"
+
+FLUTTER_TARGET=lib/main_user.dart
+ASSET_PREFIX=user
+BUNDLE_NAME=Kasko
+BUNDLE_DISPLAY_NAME=Kasko
