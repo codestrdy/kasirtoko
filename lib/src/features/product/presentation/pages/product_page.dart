@@ -11,16 +11,14 @@ class ProductPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-          spacing: 8,
-          children: [
-            Image.asset('assets/user-logo.png', height: 40),
-            Text(
-              'Selamat Datang di Kasko',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: COSColors.primary),
-            ),
-          ],
+        title: Text(
+          'Selamat Datang di Kasko',
+          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: COSColors.primary),
         ),
+        actions: [
+          IconButton(onPressed: () {}, icon: Icon(COSRoutes.cart.icon)),
+          SizedBox(width: 8),
+        ],
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
