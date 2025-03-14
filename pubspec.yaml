@@ -53,18 +53,20 @@ flavorizr:
     admin:
       app:
         name: "Kasko Admin"
-        icon: "assets/admin-icon.png"
 
       android:
         applicationId: "app.strdy.kaskoadmin"
+        icon: "assets/admin-icon.png"
       ios:
         bundleId: "app.strdy.kaskoadmin"
+        icon: "assets/admin-ios-icon.png"
     user:
       app:
         name: "Kasko"
-        icon: "assets/user-icon.png"
 
       android:
         applicationId: "app.strdy.kasko"
+        icon: "assets/user-icon.png"
       ios:
         bundleId: "app.strdy.kasko"
+        icon: "assets/user-ios-icon.png"

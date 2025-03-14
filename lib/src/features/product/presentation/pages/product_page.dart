@@ -15,10 +15,7 @@ class ProductPage extends StatelessWidget {
           'Selamat Datang di Kasko',
           style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: COSColors.primary),
         ),
-        actions: [
-          IconButton(onPressed: () {}, icon: Icon(COSRoutes.cart.icon)),
-          SizedBox(width: 8),
-        ],
+        actions: [Icon(COSRoutes.cart.icon, size: 28), SizedBox(width: 16)],
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
