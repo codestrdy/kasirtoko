@@ -20,6 +20,17 @@ class COSThemes {
         value: (_) => const FadeForwardsPageTransitionsBuilder(),
       ),
     ),
+    searchBarTheme: SearchBarThemeData(
+      padding: WidgetStatePropertyAll(EdgeInsets.symmetric(vertical: 4, horizontal: 16)),
+      elevation: WidgetStatePropertyAll(0),
+      side: WidgetStatePropertyAll(BorderSide(color: COSColors.neutral.shade300)),
+      surfaceTintColor: WidgetStateColor.resolveWith((s) {
+        if (s.contains(WidgetState.focused)) {
+          return COSColors.neutral.shade900;
+        }
+        return COSColors.neutral.shade300;
+      }),
+    ),
     navigationBarTheme: NavigationBarThemeData(
       indicatorColor: Colors.transparent,
       iconTheme: WidgetStateProperty.resolveWith((states) {

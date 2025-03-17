@@ -19,15 +19,10 @@ class ProductPage extends StatelessWidget {
         actions: [Icon(COSRoutes.cart.icon, size: 28), SizedBox(width: 16)],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
-            SearchBar(
-              leading: Icon(SolarIconsOutline.cardSearch),
-              padding: WidgetStatePropertyAll(EdgeInsets.symmetric(vertical: 4, horizontal: 16)),
-              elevation: WidgetStatePropertyAll(0),
-              side: WidgetStatePropertyAll(BorderSide()),
-            ),
+            SearchBar(leading: Icon(SolarIconsOutline.roundedMagnifier), hintText: 'Cari barang'),
             Text(F.appFlavor.toString()),
             FilledButton(
               onPressed: () {
@@ -35,7 +30,7 @@ class ProductPage extends StatelessWidget {
                   context,
                   title: 'Your Title',
                   subtitle: 'Your new Message',
-                  titleTextStyle: GoogleFonts.poppins(fontSize: 16),
+                  titleTextStyle: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w600),
                   subtitleTextStyle: GoogleFonts.poppins(fontSize: 12),
                   textStyle: GoogleFonts.poppins(fontSize: 16),
                 );
