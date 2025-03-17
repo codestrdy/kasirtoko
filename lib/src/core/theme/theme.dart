@@ -36,7 +36,7 @@ class COSThemes {
           return COSColors.neutral.shade300;
         }
 
-        return TextStyle(color: color(), fontWeight: FontWeight.w500);
+        return TextStyle(color: color(), fontWeight: FontWeight.w500, fontSize: 12);
       }),
       backgroundColor: COSColors.neutral[50],
     ),
