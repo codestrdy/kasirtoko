@@ -24,6 +24,9 @@ class COSThemes {
       padding: WidgetStatePropertyAll(EdgeInsets.symmetric(vertical: 4, horizontal: 16)),
       elevation: WidgetStatePropertyAll(0),
       side: WidgetStatePropertyAll(BorderSide(color: COSColors.neutral.shade300)),
+      constraints: BoxConstraints(maxHeight: 48),
+      hintStyle: WidgetStatePropertyAll(TextStyle(fontSize: 12, fontWeight: FontWeight.w500)),
+      textStyle: WidgetStatePropertyAll(TextStyle(fontSize: 12, fontWeight: FontWeight.w600)),
       surfaceTintColor: WidgetStateColor.resolveWith((s) {
         if (s.contains(WidgetState.focused)) {
           return COSColors.neutral.shade900;

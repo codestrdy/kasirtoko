@@ -22,7 +22,7 @@ class ProductPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
-            SearchBar(leading: Icon(SolarIconsOutline.roundedMagnifier), hintText: 'Cari barang'),
+            SearchBar(leading: Icon(SolarIconsOutline.roundedMagnifier, size: 20,), hintText: 'Cari barang'),
             Text(F.appFlavor.toString()),
             FilledButton(
               onPressed: () {

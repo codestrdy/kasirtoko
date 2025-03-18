@@ -22,14 +22,14 @@ class COSBottomNavigation extends StatelessWidget {
             label: COSRoutes.product.label,
           ),
           NavigationDestination(
-            icon: Icon(COSRoutes.cart.icon),
-            selectedIcon: Icon(COSRoutes.cart.selectedIcon),
-            label: COSRoutes.cart.label,
-          ),
-          NavigationDestination(
             icon: Icon(COSRoutes.stock.icon),
             selectedIcon: Icon(COSRoutes.stock.selectedIcon),
             label: COSRoutes.stock.label,
+          ),
+          NavigationDestination(
+            icon: Icon(COSRoutes.history.icon),
+            selectedIcon: Icon(COSRoutes.history.selectedIcon),
+            label: COSRoutes.history.label,
           ),
           NavigationDestination(
             icon: Icon(COSRoutes.report.icon),
@@ -47,10 +47,10 @@ class COSBottomNavigation extends StatelessWidget {
     if (location == (COSRoutes.product.route)) {
       return 0;
     }
-    if (location == (COSRoutes.cart.route)) {
+    if (location == (COSRoutes.stock.route)) {
       return 1;
     }
-    if (location == (COSRoutes.stock.route)) {
+    if (location == (COSRoutes.history.route)) {
       return 2;
     }
     if (location == (COSRoutes.report.route)) {
@@ -64,9 +64,9 @@ class COSBottomNavigation extends StatelessWidget {
       case 0:
         context.go(COSRoutes.product.route);
       case 1:
-        context.go(COSRoutes.cart.route);
-      case 2:
         context.go(COSRoutes.stock.route);
+      case 2:
+        context.go(COSRoutes.history.route);
       case 3:
         context.go(COSRoutes.report.route);
     }
