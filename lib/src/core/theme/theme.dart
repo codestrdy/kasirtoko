@@ -21,7 +21,7 @@ class COSThemes {
       ),
     ),
     searchBarTheme: SearchBarThemeData(
-      padding: WidgetStatePropertyAll(EdgeInsets.symmetric(vertical: 4, horizontal: 16)),
+      padding: WidgetStatePropertyAll(EdgeInsets.symmetric(vertical: 8, horizontal: 16)),
       elevation: WidgetStatePropertyAll(0),
       side: WidgetStatePropertyAll(BorderSide(color: COSColors.neutral.shade300)),
       constraints: BoxConstraints(maxHeight: 48),

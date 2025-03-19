@@ -5,7 +5,7 @@ import 'package:solar_icons/solar_icons.dart';
 import '../../features/product/presentation/pages/product_page.dart';
 import '../../features/product/presentation/pages/stock_page.dart';
 import '../../features/report/report_page.dart';
-import '../../features/transaction/cart_page.dart';
+import '../../features/transaction/history_page.dart';
 import '../core.dart';
 
 enum COSRoutes {
@@ -36,7 +36,7 @@ final goRouterConfig = GoRouter(
       builder: (context, state, child) => COSBottomNavigation(state: state, child: child),
       routes: [
         GoRoute(path: COSRoutes.product.route, builder: (context, state) => ProductPage()),
-        GoRoute(path: COSRoutes.cart.route, builder: (context, state) => CartPage()),
+        GoRoute(path: COSRoutes.history.route, builder: (context, state) => HistoryPage()),
         GoRoute(path: COSRoutes.stock.route, builder: (context, state) => StockPage()),
         GoRoute(path: COSRoutes.report.route, builder: (context, state) => ReportPage()),
       ],
