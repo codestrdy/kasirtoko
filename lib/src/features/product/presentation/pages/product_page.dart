@@ -24,23 +24,29 @@ class ProductPage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 16),
         child: Column(
           children: [
-            SearchBar(
-              leading: Icon(SolarIconsOutline.roundedMagnifier, size: 20),
-              hintText: 'Cari barang',
+            Semantics(
+              identifier: 'search_product',
+              child: SearchBar(
+                leading: Icon(SolarIconsOutline.roundedMagnifier, size: 20),
+                hintText: 'Cari barang',
+              ),
             ),
-            FilledButton(
-              onPressed: () {
-                Drops.show(
-                  context,
-                  title: 'Your Title',
-                  subtitle: 'Your new Message',
-                  titleTextStyle: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w600),
-                  subtitleTextStyle: GoogleFonts.poppins(fontSize: 12),
-                  textStyle: GoogleFonts.poppins(fontSize: 16),
-                  padding: EdgeInsets.symmetric(vertical: 12, horizontal: 48),
-                );
-              },
-              child: Text('Show Drops'),
+            Semantics(
+              identifier: 'drops_button',
+              child: FilledButton(
+                onPressed: () {
+                  Drops.show(
+                    context,
+                    title: 'Your Title',
+                    subtitle: 'Your new Message',
+                    titleTextStyle: GoogleFonts.poppins(fontSize: 16, fontWeight: FontWeight.w600),
+                    subtitleTextStyle: GoogleFonts.poppins(fontSize: 12),
+                    textStyle: GoogleFonts.poppins(fontSize: 16),
+                    padding: EdgeInsets.symmetric(vertical: 12, horizontal: 48),
+                  );
+                },
+                child: Text('Show Drops'),
+              ),
             ),
           ],
         ),

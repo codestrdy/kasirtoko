@@ -1,0 +1,9 @@
+appId: app.strdy.kasko
+---
+- launchApp
+- tapOn: 
+    id: 'drops_button'
+- tapOn:
+    id: 'search_product'
+- inputText: 'Pupuk'
+# - tapOn: 'Menu\nTab 2 of 4'
