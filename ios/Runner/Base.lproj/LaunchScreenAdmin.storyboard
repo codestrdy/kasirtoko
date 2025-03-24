@@ -38,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchImageAdmin" width="312" height="312"/>
+        <image name="LaunchImageAdmin" width="624" height="624"/>
         <image name="LaunchBackgroundAdmin" width="1" height="1"/>
     </resources>
 </document>
