@@ -28,7 +28,7 @@ class ProductPage extends StatelessWidget {
               identifier: 'search_product',
               child: SearchBar(
                 leading: Icon(SolarIconsOutline.roundedMagnifier, size: 20),
-                hintText: 'Cari barang',
+                hintText: 'Cari produk',
               ),
             ),
             Semantics(
