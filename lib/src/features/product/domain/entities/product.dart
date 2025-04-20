@@ -14,22 +14,33 @@ class Product with _$Product {
     required this.stock,
     required this.price,
     required this.category,
+    required this.expiredAt,
   });
 
   @override
   final int? id;
+
   @override
   final String name;
+
   @override
   final String description;
+
   @override
   final int sold;
+
   @override
   final int sale;
+
   @override
   final int stock;
+
   @override
   final int price;
+
   @override
   final ProductCategory category;
+
+  @override
+  final DateTime expiredAt;
 }

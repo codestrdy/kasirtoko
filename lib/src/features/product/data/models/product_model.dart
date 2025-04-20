@@ -18,10 +18,10 @@ sealed class ProductModel with _$ProductModel {
     required int stock,
     required int price,
     required ProductCategory category,
+    @JsonKey(name: 'expired_at') required DateTime expiredAt,
   }) = _ProductModel;
 
-  factory ProductModel.fromJson(Map<String, dynamic> json) =>
-      _$ProductModelFromJson(json);
+  factory ProductModel.fromJson(Map<String, dynamic> json) => _$ProductModelFromJson(json);
 
   Product toEntity() {
     return Product(
@@ -33,6 +33,7 @@ sealed class ProductModel with _$ProductModel {
       stock: stock,
       price: price,
       category: category,
+      expiredAt: expiredAt,
     );
   }
 }
